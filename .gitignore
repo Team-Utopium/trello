@@ -1,0 +1,4 @@
+*.sqlite
+shrinkwrap.yaml
+node_modules/
+.env

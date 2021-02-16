@@ -1,0 +1,27 @@
+{
+  "name": "lt-discord-bot-format",
+  "version": "1.0.0",
+  "homepage": "-",
+  "description": "Discord Bot Format by LuciferianThomas",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "es6-shim": "^0.35.6",
+    "node-cmd": "^4.0.0",
+    "quick.db": "^7.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "Shadow",
+  "license": "MIT"
+}
