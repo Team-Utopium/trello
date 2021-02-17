@@ -30,7 +30,7 @@ app.post("/trelloCallback", (req, res) => {
     }
     if (
         x.action.type == "updateCard" &&
-        x.action.data.listAfter.name == "To Be Tested"
+        x.action.data.listAfter && x.action.data.listAfter.name == "To Be Tested"
     ) {
         updatechan.send(
             embed
