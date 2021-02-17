@@ -25,7 +25,7 @@ app.post("/trelloCallback", (req, res) => {
                 .setDescription(
                     `Card Title: \`${x.action.data.card.name}\`\n\nUpdated by: ${x.action.memberCreator.username}\n`
                 )
-                .setURL("https://trello.com/c/" + x.action.data.card.url)
+                .setURL("https://trello.com/c/" + x.action.data.card.shortLink)
         )
     }
     if (
