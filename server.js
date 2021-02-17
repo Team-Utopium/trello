@@ -12,9 +12,9 @@ let embedt = new MessageEmbed().setColor(0x708ad7).setTimestamp()
 
 app.post("/trelloCallback", (req, res) => {
     let embed = embedt
-    console.log(JSON.stringify(req.body, null, 2))
+    //console.log(JSON.stringify(req.body, null, 2))
     let x = req.body
-    updatechan.send(JSON.stringify(x, null, 2), { split: ",", code: "json" })
+    //updatechan.send(JSON.stringify(x, null, 2), { split: ",", code: "json" })
     if (
         x.action.type == "addLabelToCard" &&
         x.action.data.text == "Needs Information"
