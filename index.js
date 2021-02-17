@@ -6,7 +6,7 @@ const Discord = require('discord.js'),
 
 const {axios, trello, tconfig} = require("./trello.js")
 
-const client = new Discord.Client(),
+const client = require("./client.js"),
       config = require('/home/sd/utopium/wwou-staff/util/config'),
       fn = require('/home/sd/utopium/wwou-staff/util/fn'),
       cmd = require('node-cmd')
@@ -28,6 +28,7 @@ client.login(token)
 
 client.once('ready', async () => {
   console.log(`${fn.time()} | ${client.user.username} is up!`)
+  require("./server.js")
 })
 
 client.on('message', async message => {
